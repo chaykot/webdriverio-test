@@ -13,6 +13,7 @@ class MainPage {
 
     open() {
         browser.url('/');
+        browser.maximizeWindow();
     }
 
     search(text) {
@@ -20,7 +21,7 @@ class MainPage {
         this.searchBtn.click();
     }
 
-    lucky(text) {
+    getLucky(text) {
         this.searchTb.setValue(text);
         this.luckyBtn.click();
     }

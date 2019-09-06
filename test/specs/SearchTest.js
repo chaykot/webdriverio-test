@@ -1,6 +1,6 @@
 import MainPage from '../../pages/Main.page';
 import ResultsPage from '../../pages/Results.page';
-const assert = require('assert');
+var assert = require('chai').assert;
 
 describe('Google search', () => {
     it('should work correctly', () => {

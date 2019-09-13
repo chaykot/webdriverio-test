@@ -4,11 +4,11 @@ class MainPage {
     }
 
     get searchBtn() {
-        return $("[name='btnK']")
+        return $("//div[@class='VlcLAe']//input[@name='btnK']")
     }
 
     get luckyBtn() {
-        return $("[name='btnI']")
+        return $("//div[@class='VlcLAe']//input[@name='btnI']")
     }
 
     open() {

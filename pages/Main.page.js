@@ -18,11 +18,13 @@ class MainPage {
 
     search(text) {
         this.searchTb.setValue(text);
+        this.searchBtn.scrollIntoView();
         this.searchBtn.click();
     }
 
     getLucky(text) {
         this.searchTb.setValue(text);
+        this.luckyBtn.scrollIntoView();
         this.luckyBtn.click();
     }
 }

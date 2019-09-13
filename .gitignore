@@ -72,6 +72,7 @@ webdriverio-core.d.ts
 !.eslintrc.js
 package-lock.json
 .DS_Store
+!allurgen.js
 
 website/.sass-cache/
 website/translated_docs

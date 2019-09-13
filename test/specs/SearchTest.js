@@ -5,7 +5,7 @@ var assert = require('chai').assert;
 describe('Google search', () => {
     it('should work correctly', () => {
         MainPage.open();
-        MainPage.search('1984 скачать книгу');
+        MainPage.search('какой-то запрос');
         assert.equal(ResultsPage.resultStats.isDisplayed(), false, "Results stats is not present");
     });
 });

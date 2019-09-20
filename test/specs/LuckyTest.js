@@ -1,8 +1,12 @@
 import MainPage from '../../pages/Main.page';
 
 describe('Google Lucky button', () => {
-    it('should work correctly', () => {
+
+    before (() => {
         MainPage.open();
+    }); 
+
+    it('should work correctly', () => {        
         MainPage.getLucky('какой-то запрос в google');
     });
 });

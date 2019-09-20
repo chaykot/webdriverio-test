@@ -1,28 +1,27 @@
-class MainPage {
+import BasePage from '../pages/Base.page'
+import Element from '../elements/Element';
+
+class MainPage extends BasePage {
+
     get searchTb() {
-        return $("[name='q']")
+        return new Element("[name='q']", "Search text box");
     }
 
     get searchBtn() {
-        return $("//div[@class='VlcLAe']//input[@name='btnK']")
+        return new Element("//div[@class='VlcLAe']//input[@name='btnK']", "Search button");
     }
 
     get luckyBtn() {
-        return $("//div[@class='VlcLAe']//input[@name='btnI']")
-    }
-
-    open() {
-        browser.url('/');
-        browser.maximizeWindow();
+        return new Element("//div[@class='VlcLAe']//input[@name='btnI']", "Luck button");
     }
 
     search(text) {
-        this.searchTb.setValue(text);
+        this.searchTb.setText(text);
         this.searchBtn.click();
     }
 
     getLucky(text) {
-        this.searchTb.setValue(text);
+        this.searchTb.setText(text);
         this.luckyBtn.click();
     }
 }
